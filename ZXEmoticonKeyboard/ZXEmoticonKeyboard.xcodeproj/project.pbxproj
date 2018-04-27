@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		095E58FE1E35F3593783A89B /* Pods_ZXEmoticonKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FE58935D2657BFD8205A7C /* Pods_ZXEmoticonKeyboard.framework */; };
 		262EB43B2092F50E00BF8921 /* ZXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB43A2092F50E00BF8921 /* ZXViewController.swift */; };
-		262EB4402092F67400BF8921 /* WMComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB43F2092F67400BF8921 /* WMComposeTextView.swift */; };
 		262EB4422092F69600BF8921 /* ZXComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB4412092F69600BF8921 /* ZXComposeTextView.swift */; };
 		262EB4462092F6B700BF8921 /* ZXEmoticonTextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB4432092F6B700BF8921 /* ZXEmoticonTextAttachment.swift */; };
 		262EB4472092F6B700BF8921 /* ZXEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB4442092F6B700BF8921 /* ZXEmoticon.swift */; };
@@ -30,7 +29,6 @@
 
 /* Begin PBXFileReference section */
 		262EB43A2092F50E00BF8921 /* ZXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXViewController.swift; sourceTree = "<group>"; };
-		262EB43F2092F67400BF8921 /* WMComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMComposeTextView.swift; sourceTree = "<group>"; };
 		262EB4412092F69600BF8921 /* ZXComposeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXComposeTextView.swift; sourceTree = "<group>"; };
 		262EB4432092F6B700BF8921 /* ZXEmoticonTextAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXEmoticonTextAttachment.swift; sourceTree = "<group>"; };
 		262EB4442092F6B700BF8921 /* ZXEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXEmoticon.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 		262EB43C2092F64800BF8921 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				262EB43F2092F67400BF8921 /* WMComposeTextView.swift */,
 				262EB4412092F69600BF8921 /* ZXComposeTextView.swift */,
 				262EB44C2092F6D100BF8921 /* ZXEmotionCell.swift */,
 				262EB44D2092F6D100BF8921 /* ZXEmotionInputView.swift */,
@@ -305,7 +302,6 @@
 				262EB4502092F6D100BF8921 /* ZXEmotionToolBar.swift in Sources */,
 				262EB4462092F6B700BF8921 /* ZXEmoticonTextAttachment.swift in Sources */,
 				262EB4422092F69600BF8921 /* ZXComposeTextView.swift in Sources */,
-				262EB4402092F67400BF8921 /* WMComposeTextView.swift in Sources */,
 				262EB4532092F6D100BF8921 /* ZXEmotionInputView.swift in Sources */,
 				262EB4572092F6DD00BF8921 /* ZXEmoticonManager.swift in Sources */,
 				262EB4522092F6D100BF8921 /* ZXEmotionCell.swift in Sources */,
