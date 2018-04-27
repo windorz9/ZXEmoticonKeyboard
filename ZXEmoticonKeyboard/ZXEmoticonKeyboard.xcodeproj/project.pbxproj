@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		095E58FE1E35F3593783A89B /* Pods_ZXEmoticonKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FE58935D2657BFD8205A7C /* Pods_ZXEmoticonKeyboard.framework */; };
 		26A07BC82092EE14001E9F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A07BC72092EE14001E9F75 /* AppDelegate.swift */; };
 		26A07BCA2092EE14001E9F75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A07BC92092EE14001E9F75 /* ViewController.swift */; };
 		26A07BCD2092EE14001E9F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A07BCB2092EE14001E9F75 /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 		26A07BCE2092EE15001E9F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26A07BD12092EE15001E9F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26A07BD32092EE15001E9F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37FE58935D2657BFD8205A7C /* Pods_ZXEmoticonKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXEmoticonKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7FA074616B55D21E3243670 /* Pods-ZXEmoticonKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXEmoticonKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZXEmoticonKeyboard/Pods-ZXEmoticonKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		DFE365414303F69E9E3C2266 /* Pods-ZXEmoticonKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXEmoticonKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZXEmoticonKeyboard/Pods-ZXEmoticonKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				095E58FE1E35F3593783A89B /* Pods_ZXEmoticonKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				26A07BC62092EE13001E9F75 /* ZXEmoticonKeyboard */,
 				26A07BC52092EE13001E9F75 /* Products */,
+				62822B44B7F1EA5CB183C49C /* Pods */,
+				945DC43B286C4962C3BD2AB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = ZXEmoticonKeyboard;
 			sourceTree = "<group>";
 		};
+		62822B44B7F1EA5CB183C49C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7FA074616B55D21E3243670 /* Pods-ZXEmoticonKeyboard.debug.xcconfig */,
+				DFE365414303F69E9E3C2266 /* Pods-ZXEmoticonKeyboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		945DC43B286C4962C3BD2AB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37FE58935D2657BFD8205A7C /* Pods_ZXEmoticonKeyboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26A07BD62092EE15001E9F75 /* Build configuration list for PBXNativeTarget "ZXEmoticonKeyboard" */;
 			buildPhases = (
+				352D0BA0EAF2465B3B8B5F7C /* [CP] Check Pods Manifest.lock */,
 				26A07BC02092EE13001E9F75 /* Sources */,
 				26A07BC12092EE13001E9F75 /* Frameworks */,
 				26A07BC22092EE13001E9F75 /* Resources */,
+				7776FA7D960756B7B7785896 /* [CP] Embed Pods Frameworks */,
+				A68AF58C91BB831663DBE69E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		352D0BA0EAF2465B3B8B5F7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZXEmoticonKeyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7776FA7D960756B7B7785896 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZXEmoticonKeyboard/Pods-ZXEmoticonKeyboard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZXEmoticonKeyboard/Pods-ZXEmoticonKeyboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A68AF58C91BB831663DBE69E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZXEmoticonKeyboard/Pods-ZXEmoticonKeyboard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26A07BC02092EE13001E9F75 /* Sources */ = {
@@ -278,16 +361,14 @@
 		};
 		26A07BD72092EE15001E9F75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7FA074616B55D21E3243670 /* Pods-ZXEmoticonKeyboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26Z2MG3ME2;
 				INFOPLIST_FILE = ZXEmoticonKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.windorz.ZXEmoticonKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -297,16 +378,14 @@
 		};
 		26A07BD82092EE15001E9F75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE365414303F69E9E3C2266 /* Pods-ZXEmoticonKeyboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26Z2MG3ME2;
 				INFOPLIST_FILE = ZXEmoticonKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.windorz.ZXEmoticonKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

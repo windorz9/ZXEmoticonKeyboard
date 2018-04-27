@@ -1,0 +1,9 @@
+platform :ios, '9.0'
+
+target 'ZXEmoticonKeyboard' do
+  use_frameworks!
+
+pod 'YYModel'
+pod 'pop'
+end
+
