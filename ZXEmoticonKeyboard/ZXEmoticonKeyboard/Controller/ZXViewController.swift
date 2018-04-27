@@ -13,11 +13,18 @@ class ZXViewController: UIViewController {
     // 文本编辑视图
     @IBOutlet weak var textView: ZXComposeTextView!
     
+    // 导航栏打印按钮
+    @IBOutlet var printButton: UIButton!
+    
+    // 导航栏标题
+    @IBOutlet var titleLabel: UILabel!
+    
     // 底部工具栏
     @IBOutlet weak var toolBar: UIToolbar!
     
     // 工具栏底部约束
     @IBOutlet weak var toolBarBottomCons: NSLayoutConstraint!
+    
     
     // 记录当前设备的键盘高度
     private var keyBoardHeight: CGFloat = 0.0
@@ -29,8 +36,7 @@ class ZXViewController: UIViewController {
         
     }
 
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -63,7 +69,6 @@ class ZXViewController: UIViewController {
         
         /**
          print(n.userInfo)
-         
          ([
          AnyHashable("UIKeyboardCenterBeginUserInfoKey"):
          NSPoint: {187.5, 796},
@@ -116,6 +121,22 @@ class ZXViewController: UIViewController {
         
     }
     
+    
+    
+    // MARK: 点击关闭按钮
+    @objc private func close() {
+        
+        print("关闭")
+        
+    }
+    
+    
+    // MARK: 点击打印按钮
+    @IBAction func clickPrintButton() {
+        
+        print("\(textView.text)")
+        
+    }
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
@@ -126,7 +147,7 @@ extension ZXViewController: UITextViewDelegate {
     
     // 文本视图文本变化
     func textViewDidChange(_ textView: UITextView) {
-//        sendButton.isEnabled = textView.hasText
+        printButton.isEnabled = textView.hasText
     }
     
     
@@ -139,7 +160,7 @@ private extension ZXViewController {
         
         view.backgroundColor = UIColor.white
         
-        // setupNavigationBar()
+        setupNavigationBar()
         
         setupToolbar()
     }
@@ -195,20 +216,24 @@ private extension ZXViewController {
         
     }
     
-    // 设置导航栏
-//    func setupNavigationBar() {
-//
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "关闭", target: self, action: #selector(close))
-//
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: sendButton)
-//        // 设置标题视图
-//        navigationItem.titleView = titleLabel
-//
-//        sendButton.isEnabled = false
-//
-//
-//    }
-//
+    //  设置导航栏
+    func setupNavigationBar() {
+
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "关闭", target: self, action: #selector(close))
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: printButton)
+        
+        // 设置标题视图
+        navigationItem.titleView = titleLabel
+
+        printButton.isEnabled = false
+
+
+    }
+    
+
+    
+
     
     
 }

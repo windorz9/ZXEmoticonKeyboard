@@ -22,6 +22,8 @@
 		262EB4572092F6DD00BF8921 /* ZXEmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB4552092F6DB00BF8921 /* ZXEmoticonManager.swift */; };
 		262EB4582092F6DD00BF8921 /* HMEmoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 262EB4562092F6DC00BF8921 /* HMEmoticon.bundle */; };
 		262EB45E20933C9E00BF8921 /* ZXViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262EB45D20933C9E00BF8921 /* ZXViewController.xib */; };
+		262EB461209344F000BF8921 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB460209344F000BF8921 /* UIBarButtonItem+Extension.swift */; };
+		262EB463209345BB00BF8921 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB462209345BB00BF8921 /* UIButton+Extension.swift */; };
 		26A07BC82092EE14001E9F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A07BC72092EE14001E9F75 /* AppDelegate.swift */; };
 		26A07BCF2092EE15001E9F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26A07BCE2092EE15001E9F75 /* Assets.xcassets */; };
 		26A07BD22092EE15001E9F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A07BD02092EE15001E9F75 /* LaunchScreen.storyboard */; };
@@ -42,6 +44,8 @@
 		262EB4552092F6DB00BF8921 /* ZXEmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXEmoticonManager.swift; sourceTree = "<group>"; };
 		262EB4562092F6DC00BF8921 /* HMEmoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HMEmoticon.bundle; sourceTree = "<group>"; };
 		262EB45D20933C9E00BF8921 /* ZXViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZXViewController.xib; sourceTree = "<group>"; };
+		262EB460209344F000BF8921 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		262EB462209345BB00BF8921 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		26A07BC42092EE13001E9F75 /* ZXEmoticonKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXEmoticonKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A07BC72092EE14001E9F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26A07BCE2092EE15001E9F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +117,15 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		262EB45F209344DF00BF8921 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				262EB460209344F000BF8921 /* UIBarButtonItem+Extension.swift */,
+				262EB462209345BB00BF8921 /* UIButton+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		26A07BBB2092EE13001E9F75 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +151,7 @@
 				262EB45A2092F71F00BF8921 /* Manager */,
 				262EB43E2092F65C00BF8921 /* Controller */,
 				262EB43D2092F65600BF8921 /* Model */,
+				262EB45F209344DF00BF8921 /* Extension */,
 				262EB43C2092F64800BF8921 /* View */,
 				262EB4592092F6ED00BF8921 /* Resource */,
 				26A07BCE2092EE15001E9F75 /* Assets.xcassets */,
@@ -308,6 +322,8 @@
 				262EB4512092F6D100BF8921 /* ZXEmotionLayout.swift in Sources */,
 				262EB44F2092F6D100BF8921 /* ZXEmotionTipView.swift in Sources */,
 				262EB4472092F6B700BF8921 /* ZXEmoticon.swift in Sources */,
+				262EB461209344F000BF8921 /* UIBarButtonItem+Extension.swift in Sources */,
+				262EB463209345BB00BF8921 /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
