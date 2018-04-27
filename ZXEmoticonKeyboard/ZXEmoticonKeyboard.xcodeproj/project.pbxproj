@@ -8,17 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		095E58FE1E35F3593783A89B /* Pods_ZXEmoticonKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37FE58935D2657BFD8205A7C /* Pods_ZXEmoticonKeyboard.framework */; };
+		262EB43B2092F50E00BF8921 /* ZXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB43A2092F50E00BF8921 /* ZXViewController.swift */; };
+		262EB4402092F67400BF8921 /* WMComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB43F2092F67400BF8921 /* WMComposeTextView.swift */; };
+		262EB4422092F69600BF8921 /* ZXComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB4412092F69600BF8921 /* ZXComposeTextView.swift */; };
+		262EB4462092F6B700BF8921 /* ZXEmoticonTextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB4432092F6B700BF8921 /* ZXEmoticonTextAttachment.swift */; };
+		262EB4472092F6B700BF8921 /* ZXEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB4442092F6B700BF8921 /* ZXEmoticon.swift */; };
+		262EB4482092F6B700BF8921 /* ZXEmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB4452092F6B700BF8921 /* ZXEmoticonPackage.swift */; };
+		262EB44F2092F6D100BF8921 /* ZXEmotionTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB4492092F6D000BF8921 /* ZXEmotionTipView.swift */; };
+		262EB4502092F6D100BF8921 /* ZXEmotionToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB44A2092F6D000BF8921 /* ZXEmotionToolBar.swift */; };
+		262EB4512092F6D100BF8921 /* ZXEmotionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB44B2092F6D000BF8921 /* ZXEmotionLayout.swift */; };
+		262EB4522092F6D100BF8921 /* ZXEmotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB44C2092F6D100BF8921 /* ZXEmotionCell.swift */; };
+		262EB4532092F6D100BF8921 /* ZXEmotionInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB44D2092F6D100BF8921 /* ZXEmotionInputView.swift */; };
+		262EB4542092F6D100BF8921 /* ZXEmotionInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262EB44E2092F6D100BF8921 /* ZXEmotionInputView.xib */; };
+		262EB4572092F6DD00BF8921 /* ZXEmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EB4552092F6DB00BF8921 /* ZXEmoticonManager.swift */; };
+		262EB4582092F6DD00BF8921 /* HMEmoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 262EB4562092F6DC00BF8921 /* HMEmoticon.bundle */; };
 		26A07BC82092EE14001E9F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A07BC72092EE14001E9F75 /* AppDelegate.swift */; };
-		26A07BCA2092EE14001E9F75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A07BC92092EE14001E9F75 /* ViewController.swift */; };
 		26A07BCD2092EE14001E9F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A07BCB2092EE14001E9F75 /* Main.storyboard */; };
 		26A07BCF2092EE15001E9F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26A07BCE2092EE15001E9F75 /* Assets.xcassets */; };
 		26A07BD22092EE15001E9F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A07BD02092EE15001E9F75 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		262EB43A2092F50E00BF8921 /* ZXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXViewController.swift; sourceTree = "<group>"; };
+		262EB43F2092F67400BF8921 /* WMComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMComposeTextView.swift; sourceTree = "<group>"; };
+		262EB4412092F69600BF8921 /* ZXComposeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXComposeTextView.swift; sourceTree = "<group>"; };
+		262EB4432092F6B700BF8921 /* ZXEmoticonTextAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXEmoticonTextAttachment.swift; sourceTree = "<group>"; };
+		262EB4442092F6B700BF8921 /* ZXEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXEmoticon.swift; sourceTree = "<group>"; };
+		262EB4452092F6B700BF8921 /* ZXEmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXEmoticonPackage.swift; sourceTree = "<group>"; };
+		262EB4492092F6D000BF8921 /* ZXEmotionTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXEmotionTipView.swift; sourceTree = "<group>"; };
+		262EB44A2092F6D000BF8921 /* ZXEmotionToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXEmotionToolBar.swift; sourceTree = "<group>"; };
+		262EB44B2092F6D000BF8921 /* ZXEmotionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXEmotionLayout.swift; sourceTree = "<group>"; };
+		262EB44C2092F6D100BF8921 /* ZXEmotionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXEmotionCell.swift; sourceTree = "<group>"; };
+		262EB44D2092F6D100BF8921 /* ZXEmotionInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXEmotionInputView.swift; sourceTree = "<group>"; };
+		262EB44E2092F6D100BF8921 /* ZXEmotionInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZXEmotionInputView.xib; sourceTree = "<group>"; };
+		262EB4552092F6DB00BF8921 /* ZXEmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXEmoticonManager.swift; sourceTree = "<group>"; };
+		262EB4562092F6DC00BF8921 /* HMEmoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HMEmoticon.bundle; sourceTree = "<group>"; };
 		26A07BC42092EE13001E9F75 /* ZXEmoticonKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXEmoticonKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A07BC72092EE14001E9F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26A07BC92092EE14001E9F75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		26A07BCC2092EE14001E9F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26A07BCE2092EE15001E9F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26A07BD12092EE15001E9F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +66,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		262EB43C2092F64800BF8921 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				262EB43F2092F67400BF8921 /* WMComposeTextView.swift */,
+				262EB4412092F69600BF8921 /* ZXComposeTextView.swift */,
+				262EB44C2092F6D100BF8921 /* ZXEmotionCell.swift */,
+				262EB44D2092F6D100BF8921 /* ZXEmotionInputView.swift */,
+				262EB44E2092F6D100BF8921 /* ZXEmotionInputView.xib */,
+				262EB44B2092F6D000BF8921 /* ZXEmotionLayout.swift */,
+				262EB4492092F6D000BF8921 /* ZXEmotionTipView.swift */,
+				262EB44A2092F6D000BF8921 /* ZXEmotionToolBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		262EB43D2092F65600BF8921 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				262EB4442092F6B700BF8921 /* ZXEmoticon.swift */,
+				262EB4452092F6B700BF8921 /* ZXEmoticonPackage.swift */,
+				262EB4432092F6B700BF8921 /* ZXEmoticonTextAttachment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		262EB43E2092F65C00BF8921 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				262EB43A2092F50E00BF8921 /* ZXViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		262EB4592092F6ED00BF8921 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				262EB4562092F6DC00BF8921 /* HMEmoticon.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		262EB45A2092F71F00BF8921 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				262EB4552092F6DB00BF8921 /* ZXEmoticonManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		26A07BBB2092EE13001E9F75 = {
 			isa = PBXGroup;
 			children = (
@@ -62,7 +137,11 @@
 			isa = PBXGroup;
 			children = (
 				26A07BC72092EE14001E9F75 /* AppDelegate.swift */,
-				26A07BC92092EE14001E9F75 /* ViewController.swift */,
+				262EB45A2092F71F00BF8921 /* Manager */,
+				262EB43E2092F65C00BF8921 /* Controller */,
+				262EB43D2092F65600BF8921 /* Model */,
+				262EB43C2092F64800BF8921 /* View */,
+				262EB4592092F6ED00BF8921 /* Resource */,
 				26A07BCB2092EE14001E9F75 /* Main.storyboard */,
 				26A07BCE2092EE15001E9F75 /* Assets.xcassets */,
 				26A07BD02092EE15001E9F75 /* LaunchScreen.storyboard */,
@@ -151,7 +230,9 @@
 			files = (
 				26A07BD22092EE15001E9F75 /* LaunchScreen.storyboard in Resources */,
 				26A07BCF2092EE15001E9F75 /* Assets.xcassets in Resources */,
+				262EB4582092F6DD00BF8921 /* HMEmoticon.bundle in Resources */,
 				26A07BCD2092EE14001E9F75 /* Main.storyboard in Resources */,
+				262EB4542092F6D100BF8921 /* ZXEmotionInputView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +299,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26A07BCA2092EE14001E9F75 /* ViewController.swift in Sources */,
+				262EB4482092F6B700BF8921 /* ZXEmoticonPackage.swift in Sources */,
+				262EB43B2092F50E00BF8921 /* ZXViewController.swift in Sources */,
 				26A07BC82092EE14001E9F75 /* AppDelegate.swift in Sources */,
+				262EB4502092F6D100BF8921 /* ZXEmotionToolBar.swift in Sources */,
+				262EB4462092F6B700BF8921 /* ZXEmoticonTextAttachment.swift in Sources */,
+				262EB4422092F69600BF8921 /* ZXComposeTextView.swift in Sources */,
+				262EB4402092F67400BF8921 /* WMComposeTextView.swift in Sources */,
+				262EB4532092F6D100BF8921 /* ZXEmotionInputView.swift in Sources */,
+				262EB4572092F6DD00BF8921 /* ZXEmoticonManager.swift in Sources */,
+				262EB4522092F6D100BF8921 /* ZXEmotionCell.swift in Sources */,
+				262EB4512092F6D100BF8921 /* ZXEmotionLayout.swift in Sources */,
+				262EB44F2092F6D100BF8921 /* ZXEmotionTipView.swift in Sources */,
+				262EB4472092F6B700BF8921 /* ZXEmoticon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +460,10 @@
 				DEVELOPMENT_TEAM = 26Z2MG3ME2;
 				INFOPLIST_FILE = ZXEmoticonKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.windorz.ZXEmoticonKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -385,7 +480,10 @@
 				DEVELOPMENT_TEAM = 26Z2MG3ME2;
 				INFOPLIST_FILE = ZXEmoticonKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.windorz.ZXEmoticonKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

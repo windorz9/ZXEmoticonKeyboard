@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Vlk-eG-r8P" customClass="ZXEmotionInputView" customModule="WMWeibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="258"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="a3I-xp-rkG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="iNp-sH-7uK" customClass="ZXEmotionLayout" customModule="WMWeibo" customModuleProvider="target">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="Vlk-eG-r8P" id="bOH-fq-7uC"/>
+                        <outlet property="delegate" destination="Vlk-eG-r8P" id="FdB-Xk-Ii6"/>
+                    </connections>
+                </collectionView>
+                <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="1" translatesAutoresizingMaskIntoConstraints="NO" id="VBe-Bu-Yxe">
+                    <rect key="frame" x="187.5" y="222" width="0.0" height="0.0"/>
+                    <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWo-P3-yTx" userLabel="底部工具栏" customClass="ZXEmotionToolBar" customModule="WMWeibo" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="214" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="hsX-Ia-WAh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fWo-P3-yTx" firstAttribute="top" secondItem="VBe-Bu-Yxe" secondAttribute="bottom" constant="-8" id="7qc-BO-B0C"/>
+                <constraint firstItem="a3I-xp-rkG" firstAttribute="top" secondItem="OB7-oQ-5D8" secondAttribute="top" id="9Q8-Y7-urz"/>
+                <constraint firstItem="a3I-xp-rkG" firstAttribute="leading" secondItem="OB7-oQ-5D8" secondAttribute="leading" id="ECK-pL-8kz"/>
+                <constraint firstItem="OB7-oQ-5D8" firstAttribute="trailing" secondItem="fWo-P3-yTx" secondAttribute="trailing" id="MnC-nJ-qvA"/>
+                <constraint firstItem="VBe-Bu-Yxe" firstAttribute="centerX" secondItem="Vlk-eG-r8P" secondAttribute="centerX" id="S7J-Ex-3wo"/>
+                <constraint firstItem="fWo-P3-yTx" firstAttribute="bottom" secondItem="OB7-oQ-5D8" secondAttribute="bottom" id="Vfr-AI-CjS"/>
+                <constraint firstItem="OB7-oQ-5D8" firstAttribute="trailing" secondItem="a3I-xp-rkG" secondAttribute="trailing" id="XfP-Tm-yYR"/>
+                <constraint firstItem="fWo-P3-yTx" firstAttribute="top" secondItem="a3I-xp-rkG" secondAttribute="bottom" id="ufk-aK-Atn"/>
+                <constraint firstItem="fWo-P3-yTx" firstAttribute="leading" secondItem="OB7-oQ-5D8" secondAttribute="leading" id="wkq-y4-9D3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="OB7-oQ-5D8"/>
+            <connections>
+                <outlet property="collectionView" destination="a3I-xp-rkG" id="hZx-oH-FOQ"/>
+                <outlet property="pageControl" destination="VBe-Bu-Yxe" id="5oe-Vk-kZX"/>
+                <outlet property="toolBar" destination="fWo-P3-yTx" id="G8w-Ng-cbq"/>
+            </connections>
+            <point key="canvasLocation" x="-120" y="-13"/>
+        </view>
+    </objects>
+</document>
