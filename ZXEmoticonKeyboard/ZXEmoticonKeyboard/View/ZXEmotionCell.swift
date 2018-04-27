@@ -15,7 +15,6 @@ import UIKit
 }
 
 // 表情页面 cell
-
 // - 每一个 cell 就是和 collectionView 一样大小.
 // - 每一个 cell 中使用9宫格布局的算法, 自行添加20个表情外加一个删除按钮.
 
@@ -65,10 +64,6 @@ class ZXEmotionCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-//    override func awakeFromNib() {
-//
-//        setupUI()
-//    }
     
     override func willMove(toWindow newWindow: UIWindow?) {
         super.willMove(toWindow: newWindow)

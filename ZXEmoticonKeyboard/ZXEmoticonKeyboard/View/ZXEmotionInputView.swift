@@ -47,9 +47,7 @@ class ZXEmotionInputView: UIView {
     override func awakeFromNib() {
         // 注册单元格
         collectionView.register(ZXEmotionCell.self, forCellWithReuseIdentifier: cellId)
-//        let nib = UINib(nibName: "ZXEmotionCell", bundle: nil)
-//        collectionView.register(nib, forCellWithReuseIdentifier: cellId)
-        
+      
         // 从xib加载的toolBar 在这里设置代理
         toolBar.delegate = self
         

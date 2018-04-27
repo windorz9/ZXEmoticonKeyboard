@@ -98,8 +98,7 @@ extension ZXEmoticonManager {
             let range = m.range(at: 0)
             // 获取到两个 range1 {1, 4}, range2 {6, 5}
             // 但是这里不能进行正序替换字符串为表情图片, 因为一旦替换第一个, 后面再进行替换就会全部失效. 所以这里应该倒序
-            //            print(range.location)
-            //            print(range.length)
+
             let subStr = (attrString.string as NSString).substring(with: range)
             
             if let em = ZXEmoticonManager.shared.findEmoticon(string: subStr) {

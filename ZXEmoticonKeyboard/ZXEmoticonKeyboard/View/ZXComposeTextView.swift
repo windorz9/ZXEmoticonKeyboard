@@ -39,7 +39,6 @@ class ZXComposeTextView: UITextView {
             
             if let attachment = dic[NSAttributedStringKey.attachment] as? ZXEmoticonTextAttachment {
                 
-                //                print("图片\(attachment)")
                 result += attachment.chs ?? ""
                 
             } else {
@@ -96,10 +95,6 @@ extension ZXComposeTextView {
             return
         }
         
-        // 点击图片才会执行到这里.
-        // 所有的排版系统当中, 几乎有一个共同的特点, 插入的字符的显示, 跟随前一个字符的属性, 但是本身没有属性, 就是我们输入同一个表情多次的时候, 由于后面的都没有属性, 所有图片表情显示的会不一样. 所以我们需要给每一个表情设置属性 将属性设置放到方法里面去
-        //        let imageText = NSMutableAttributedString(attributedString: em.imageText(font: textView.font!))
-        //        imageText.addAttributes([NSAttributedStringKey.font: textView.font!], range: NSRange(location: 0, length: 1))
         
         // 0> 获取我们点击的图片的属性文本
         let imageText = em.imageText(font: font!)
@@ -113,8 +108,7 @@ extension ZXComposeTextView {
         // 3> 重新设置属性文本
         // 记录光标位置
         let range = selectedRange
-        
-        
+
         attributedText = attrStrM
         
         // 恢复光标位置
@@ -157,6 +151,5 @@ private extension ZXComposeTextView {
         addSubview(placeholderLabel)
         
     }
-    
-    
+
 }
