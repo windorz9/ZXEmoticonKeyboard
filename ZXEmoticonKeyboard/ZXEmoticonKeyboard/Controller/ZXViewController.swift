@@ -134,7 +134,7 @@ class ZXViewController: UIViewController {
     // MARK: 点击打印按钮
     @IBAction func clickPrintButton() {
         
-        print("\(textView.text)")
+        print("\(textView.emoticonText)")
         
     }
     deinit {
